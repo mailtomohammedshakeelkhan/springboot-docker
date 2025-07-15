@@ -15,7 +15,7 @@ public class SpringbootDockerExampleApplication {
 
 	@GetMapping("/message")
 	public String showMessage(){
-		return "Congratulation you have deployed first application on Docker by Jenkins issues Resolved d!!!!!";
+		return "Congratulation you have deployed first application on Docker by Jenkins issues Resolved !!!!!";
 	}
 
 }
