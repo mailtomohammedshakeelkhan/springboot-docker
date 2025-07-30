@@ -1,21 +1,12 @@
 pipeline {
     agent any
-
+    tools {
+    maven 'maven_3_8_4'
+    }
     stages {
         stage('build') {
             steps {
-                echo 'Build Successfully'
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mailtomohammedshakeelkhan/springboot-docker']])
             }
         }
-    stage('test') {
-        steps {
-               echo 'Test Successfully'
-                }
-                }
-    stage('deploy') {
-        steps {
-               echo 'Deploy Successfully'
-            }
-            }
-    }
 }
