@@ -1,6 +1,7 @@
 package com.example.docker.springboot_docker_example;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringBootVersion;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringbootDockerExampleApplication {
 
 	public static void main(String[] args) {
+		//String springBootVersion = SpringBootVersion.getVersion();
+		//System.out.println("Spring Boot Version: " + springBootVersion);
 		SpringApplication.run(SpringbootDockerExampleApplication.class, args);
 	}
 
