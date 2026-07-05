@@ -13,13 +13,12 @@ public class SpringbootDockerExampleApplication {
 	public static void main(String[] args) {
 		//String springBootVersion = SpringBootVersion.getVersion();
 		//System.out.println("Spring Boot Version: " + springBootVersion);
-		//System.out.println("Spring Boot Version: " + springBootVersion);
 		SpringApplication.run(SpringbootDockerExampleApplication.class, args);
 	}
 
 	@GetMapping("/message")
 	public String showMessage(){
-		return "Congratulation you have deployed first application on Docker by Jenkins issues hhh !!!!!";
+		return "Congratulation you have deployed first application on Docker by Jenkins issues  !!!!!";
 	}
 
 }
