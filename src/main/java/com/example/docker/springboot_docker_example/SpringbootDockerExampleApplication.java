@@ -13,6 +13,7 @@ public class SpringbootDockerExampleApplication {
 	public static void main(String[] args) {
 		//String springBootVersion = SpringBootVersion.getVersion();
 		//System.out.println("Spring Boot Version: " + springBootVersion);
+		//System.out.println("Spring Boot Version: " + springBootVersion);
 		SpringApplication.run(SpringbootDockerExampleApplication.class, args);
 	}
 
